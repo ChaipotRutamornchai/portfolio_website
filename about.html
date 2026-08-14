@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>ABOUT ME | CHAIPOT RUTAMORNCHAI</title>
+    <meta content="About Chaipot Rutamornchai - Software Developer &amp; Data Analyst" name="description" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="css/tailwind-config.js"></script>
+    <!-- Shared site styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-surface text-on-surface selection:bg-primary/30">
+    <!-- TopNavBar -->
+    <header
+        class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-sm max-w-container-max mx-auto bg-surface/60 backdrop-blur-xl border-b border-outline-variant/20">
+        <div class="font-headline-sm text-headline-sm font-bold tracking-tighter text-on-surface">
+            Chaipot Rutamornchai
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+                href="index.html">Home</a>
+            <a class="text-primary font-bold border-b-2 border-primary pb-1" href="about.html">About</a>
+            <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+                href="dev.html">Dev</a>
+            <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+                href="data.html">Data</a>
+            <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+                href="docs.html">Docs</a>
+        </nav>
+        <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu"
+            class="md:hidden flex items-center justify-center w-10 h-10 rounded-full border border-outline-variant text-on-surface"
+            id="menu-toggle">
+            <span class="material-symbols-outlined" id="menu-icon">menu</span>
+        </button>
+    </header>
+    <div class="mobile-menu-panel fixed top-[64px] sm:top-[76px] left-0 w-full z-40 bg-surface/95 backdrop-blur-xl border-b border-outline-variant/20 px-6 py-6 gap-1"
+        id="mobile-menu">
+        <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300 border-b border-outline-variant/20"
+            href="index.html">Home</a>
+        <a class="text-primary font-bold py-3 text-base border-b border-outline-variant/20" href="about.html">About</a>
+        <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300 border-b border-outline-variant/20"
+            href="dev.html">Dev</a>
+        <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300 border-b border-outline-variant/20"
+            href="data.html">Data</a>
+        <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300"
+            href="docs.html">Docs</a>
+    </div>
+    <main class="pt-28 pb-20 px-gutter max-w-7xl mx-auto">
+        <div class="grid grid-cols-1 lg:grid-cols-12 gap-12">
+            <!-- LEFT COLUMN -->
+            <aside class="lg:col-span-4 space-y-8">
+                <div class="sticky top-28 space-y-8">
+                    <div class="relative group">
+                        <div
+                            class="absolute -inset-1 bg-gradient-to-r from-primary to-purple-600 rounded-2xl blur opacity-25 group-hover:opacity-40 transition duration-1000">
+                        </div>
+                        <img class="relative w-40 h-40 rounded-2xl object-cover  hover:grayscale-0 transition-all duration-500 shadow-xl"
+                            src="./Assets/Images/My_Image.png" />
+                    </div>
+                    <div>
+                        <h1 class="text-4xl font-extrabold tracking-tight text-white">Chaipot Rutamornchai</h1>
+                        <p class="text-xl text-primary font-medium mt-2">Software Developer &amp; Data Analyst</p>
+                        <p class="mt-4 text-on-surface-variant leading-relaxed">
+                            Passionate about working with software engineering and data-driven
+                            insights.
+                        </p>
+                    </div>
+                    <div class="space-y-4 pt-6 border-t border-outline-variant/30">
+                        <div
+                            class="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors group">
+                            <span class="material-symbols-outlined text-primary/70">mail</span>
+                            <span class="text-sm font-medium">chaipot.rutamornchai@gmail.com</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors group">
+                            <span class="material-symbols-outlined text-primary/70">call</span>
+                            <span class="text-sm font-medium">+66 97 098 7426</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors group">
+                            <span class="material-symbols-outlined text-primary/70">link</span>
+                            <span class="text-sm font-medium">linkedin.com/in/chaipot</span>
+                        </div>
+                        <div
+                            class="flex items-center gap-3 text-on-surface-variant hover:text-primary transition-colors group">
+                            <span class="material-symbols-outlined text-primary/70">code</span>
+                            <span class="text-sm font-medium">github.com/chaipot-dev</span>
+                        </div>
+                    </div>
+                    <a href="Assets/Doc/resume.pdf" download
+                        class="w-full py-4 bg-primary text-on-primary rounded-xl font-bold flex items-center justify-center gap-2 hover:bg-primary/90 transition-all shadow-lg shadow-primary/20 active:scale-[0.98]">
+                        <span class="material-symbols-outlined">download</span>
+                        Download Resume
+                    </a>
+                </div>
+            </aside>
+            <!-- RIGHT COLUMN -->
+            <section class="lg:col-span-8 space-y-12">
+                <!-- About Me -->
+                <div class="space-y-4">
+                    <h2 class="text-sm font-bold uppercase tracking-widest text-primary flex items-center gap-2">
+                        <span class="w-8 h-[1px] bg-primary"></span> About Me
+                    </h2>
+                    <p class="text-lg text-on-surface-variant leading-relaxed">
+                        Motivated Computer Science graduate with a strong foundation in software engineering, data
+                        analysis, and database systems. Experienced through academic and personal projects in Python,
+                        SQL, C#, and .NET, with hands-on work in machine learning, and web application development.
+                        Quick learner with excellent analytical and problem-solving skills, eager to contribute to
+                        building innovative software and data-driven solutions.
+                    </p>
+                </div>
+                <!-- Education -->
+                <div class="space-y-6">
+                    <h2 class="text-sm font-bold uppercase tracking-widest text-primary flex items-center gap-2">
+                        <span class="w-8 h-[1px] bg-primary"></span> Education
+                    </h2>
+                    <div class="space-y-8">
+                        <div class="relative pl-6 border-l-2 border-primary/40">
+                            <div class="absolute -left-[9px] top-0 w-4 h-4 rounded-full bg-primary ring-4 ring-surface">
+                            </div>
+                            <h3 class="font-bold text-xl text-white">Bachelor degree in Computer Science</h3>
+                            <p class="text-primary font-medium">Srinakharinwirot University | 2022 - 2026</p>
+                            <p class="text-on-surface-variant mt-2">Specialization in Data Science and Machine Learning
+                            </p>
+                        </div>
+                    </div>
+                    <!-- Technical Skills -->
+                    <div class="space-y-6">
+                        <h2 class="text-sm font-bold uppercase tracking-widest text-primary flex items-center gap-2">
+                            <span class="w-8 h-[1px] bg-primary"></span> Technical Skills
+                        </h2>
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                            <div class="p-6 rounded-2xl glass-card space-y-4">
+                                <h3 class="font-bold text-white flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-primary">terminal</span> Programming
+                                </h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-bold">Python</span>
+                                    <span
+                                        class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-bold">SQL</span>
+                                    <span
+                                        class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-bold">Java</span>
+                                    <span
+                                        class="px-3 py-1 bg-primary/10 text-primary rounded-full text-xs font-bold">C#</span>
+                                </div>
+                            </div>
+                            <div class="p-6 rounded-2xl glass-card space-y-4">
+                                <h3 class="font-bold text-white flex items-center gap-2">
+                                    <span class="material-symbols-outlined text-primary">layers</span> Tools &amp;
+                                    Frameworks
+                                </h3>
+                                <div class="flex flex-wrap gap-2">
+                                    <span
+                                        class="px-3 py-1 bg-white/5 text-on-surface-variant rounded-full text-xs font-bold">Tableau</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 text-on-surface-variant rounded-full text-xs font-bold">PostgreSQL</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 text-on-surface-variant rounded-full text-xs font-bold">Excel</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 text-on-surface-variant rounded-full text-xs font-bold">.NET</span>
+                                    <span
+                                        class="px-3 py-1 bg-white/5 text-on-surface-variant rounded-full text-xs font-bold">Docker</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Experience & Certificates -->
+                    <div class="space-y-6">
+                        <h2 class="text-sm font-bold uppercase tracking-widest text-primary flex items-center gap-2">
+                            <span class="w-8 h-[1px] bg-primary"></span> Experience &amp; Certs
+                        </h2>
+                        <div class="divide-y divide-outline-variant/30 border-y border-outline-variant/30">
+                            <div class="py-6 flex justify-between items-start group cursor-pointer">
+                                <div>
+                                    <h3 class="font-bold text-white group-hover:text-primary transition-colors">IT
+                                        Intern</h3>
+                                    <p class="text-sm text-on-surface-variant">Mercedes-Benz Manufacturing (Thailand)
+                                        Limited • Aug-2025 - Dec-2025</p>
+                                </div>
+                                <span
+                                    class="material-symbols-outlined text-outline-variant group-hover:text-primary transition-all"></span>
+                            </div>
+
+                        </div>
+                    </div>
+                    <!-- Personal Interests -->
+                    <div class="space-y-6">
+                        <h2 class="text-sm font-bold uppercase tracking-widest text-primary flex items-center gap-2">
+                            <span class="w-8 h-[1px] bg-primary"></span> Personal Interests
+                        </h2>
+                        <div class="flex flex-wrap gap-6">
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined p-2 bg-surface-container-low rounded-lg text-primary">sports_esports</span>
+                                <span class="font-medium text-sm text-on-surface-variant">Gaming</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined p-2 bg-surface-container-low rounded-lg text-primary">Dining</span>
+                                <span class="font-medium text-sm text-on-surface-variant">Cooking</span>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <span
+                                    class="material-symbols-outlined p-2 bg-surface-container-low rounded-lg text-primary">menu_book</span>
+                                <span class="font-medium text-sm text-on-surface-variant">Literature</span>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Primary Action -->
+                    <div class="pt-12">
+                        <a class="w-full md:w-auto px-10 py-5 bg-white text-black rounded-2xl font-bold flex items-center justify-center gap-3 hover:scale-[1.02] active:scale-95 transition-all shadow-2xl"
+                            href="docs.html">
+                            <span class="material-symbols-outlined">folder_open</span>
+                            View Academic Documents
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="static md:fixed md:bottom-0 w-full bg-surface/80 backdrop-blur-md py-6 px-gutter border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 z-30 md:z-50 text-center">
+        <div class="font-label-md text-xs uppercase tracking-widest text-on-surface-variant font-bold">
+            CHAIPOT RUTAMORNCHAI
+        </div>
+        <div class="flex items-center space-x-8">
+            <a class="text-on-surface-variant hover:text-primary transition-colors text-xs font-bold uppercase tracking-tighter"
+                href="https://www.linkedin.com/in/chaipot-rutmornchai-437167367/" rel="noopener noreferrer"
+                target="_blank">LinkedIn</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors text-xs font-bold uppercase tracking-tighter"
+                href="https://github.com/ChaipotRutamornchai" rel="noopener noreferrer" target="_blank">GitHub</a>
+        </div>
+    </footer>
+    <!-- Shared mobile nav toggle -->
+    <script src="css/nav.js"></script>
+    <!-- Page-specific reveal-on-scroll animation -->
+    <script>
+        const observerOptions = {
+            threshold: 0.1
+        };
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('opacity-100', 'translate-y-0');
+                    entry.target.classList.remove('opacity-0', 'translate-y-4');
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('section > div').forEach(el => {
+            el.classList.add('transition-all', 'duration-700', 'opacity-0', 'translate-y-4');
+            observer.observe(el);
+        });
+    </script>
+</body>
+
+</html>

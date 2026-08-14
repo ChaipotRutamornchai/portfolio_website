@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title> ACADEMIC DOCUMENTS | CHAIPOT RUTAMORNCHAI</title>
+    <meta content="Academic documents and credentials of Chaipot Rutamornchai" name="description" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="css/tailwind-config.js"></script>
+    <!-- Shared site styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+    <!-- Page-specific styles: document preview hover overlay -->
+    <style>
+        .document-hover:hover .preview-overlay {
+            opacity: 1;
+        }
+
+        .preview-overlay {
+            transition: opacity 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        }
+    </style>
+</head>
+
+<body class="bg-surface text-on-surface selection:bg-primary selection:text-on-primary overflow-x-hidden">
+    <!-- TopNavBar Execution -->
+    <header
+        class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-sm max-w-container-max mx-auto bg-surface/60 backdrop-blur-xl border-b border-outline-variant/20">
+        <div class="font-headline-sm text-headline-sm font-bold tracking-tighter text-on-surface">
+            Chaipot Rutamornchai
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+                href="index.html">Home</a>
+            <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+                href="about.html">About</a>
+            <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+                href="dev.html">Dev</a>
+            <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+                href="data.html">Data</a>
+            <!-- Active State: Docs -->
+            <a class="text-primary font-bold border-b-2 border-primary pb-1" href="docs.html">Docs</a>
+        </nav>
+        <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu"
+            class="md:hidden flex items-center justify-center w-10 h-10 rounded-full border border-outline-variant text-on-surface"
+            id="menu-toggle">
+            <span class="material-symbols-outlined" id="menu-icon">menu</span>
+        </button>
+    </header>
+    <div class="mobile-menu-panel fixed top-[64px] sm:top-[76px] left-0 w-full z-40 bg-surface/95 backdrop-blur-xl border-b border-outline-variant/20 px-6 py-6 gap-1"
+        id="mobile-menu">
+        <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300 border-b border-outline-variant/20"
+            href="index.html">Home</a>
+        <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300 border-b border-outline-variant/20"
+            href="about.html">About</a>
+        <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300 border-b border-outline-variant/20"
+            href="dev.html">Dev</a>
+        <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300 border-b border-outline-variant/20"
+            href="data.html">Data</a>
+        <a class="text-primary font-bold py-3 text-base" href="docs.html">Docs</a>
+    </div>
+    <main class="pt-32 pb-24 px-gutter max-w-7xl mx-auto min-h-screen">
+        <!-- Header Section -->
+        <div class="mb-20 text-center md:text-left relative">
+            <div class="absolute -top-20 -left-20 w-64 h-64 bg-primary/10 rounded-full blur-[120px]"></div>
+            <h1 class="text-5xl md:text-7xl font-bold tracking-tight mb-4 text-gradient">
+                Academic Documents
+            </h1>
+            <p class="text-xl md:text-2xl text-on-surface-variant font-light tracking-wide max-w-2xl">
+                Bachelor's Degree Records
+            </p>
+        </div>
+        <!-- Documents Grid -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 lg:gap-16">
+            <!-- Document 1: Official Transcript -->
+            <div class="group flex flex-col gap-6">
+                <div
+                    class="relative aspect-[3/4] rounded-xl overflow-hidden glass-card document-hover shadow-sm transition-all duration-500">
+                    <div class="absolute inset-0 bg-surface-container-lowest/50 flex items-center justify-center p-12">
+                        <img src="./Assets/Doc/transcript_p1.jpg" alt="Official Transcript"
+                            class="w-full h-full object-cover" />
+
+                    </div>
+                    <!-- Hover Action Overlay -->
+                    <div
+                        class="preview-overlay absolute inset-0 bg-primary/10 opacity-0 flex items-center justify-center pointer-events-none group-hover:pointer-events-auto">
+                        <button id="viewTranscript"
+                            class="bg-primary text-on-primary px-8 py-3 rounded-full flex items-center gap-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 font-bold">
+                            <span class="material-symbols-outlined">visibility</span>
+                            <span class="font-label-md">View Transcript</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <h3 class="text-2xl font-bold text-on-surface">Official Transcript</h3>
+                        <p class="text-on-surface-variant font-body-sm mt-1">Authorized PDF • Verified 2023</p>
+                    </div>
+                    <a href="./Assets/Doc/transcript.pdf" download
+                        class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary hover:border-primary transition-all">
+                        <span class="material-symbols-outlined">download</span>
+                    </a>
+                </div>
+            </div>
+            <!-- Document 2: Graduation Certificate -->
+            <div class="group flex flex-col gap-6">
+                <div
+                    class="relative aspect-[3/4] rounded-xl overflow-hidden glass-card document-hover shadow-sm transition-all duration-500">
+                    <div class="absolute inset-0 bg-surface-container-lowest/50 flex items-center justify-center p-12">
+                        <img src="./Assets/Doc/degree_en.png" alt="Graduation Certificate"
+                            class="w-full h-full object-cover" />
+
+                    </div>
+                    <!-- Hover Action Overlay -->
+                    <div
+                        class="preview-overlay absolute inset-0 bg-primary/10 opacity-0 flex items-center justify-center pointer-events-none group-hover:pointer-events-auto">
+                        <button id="viewCertificate"
+                            class="bg-primary text-on-primary px-8 py-3 rounded-full flex items-center gap-3 transform translate-y-4 group-hover:translate-y-0 transition-transform duration-500 font-bold">
+                            <span class="material-symbols-outlined">verified_user</span>
+                            <span class="font-label-md">View Certificate</span>
+                        </button>
+                    </div>
+                </div>
+                <div class="flex justify-between items-end">
+                    <div>
+                        <h3 class="text-2xl font-bold text-on-surface">Graduation Certificate</h3>
+                        <p class="text-on-surface-variant font-body-sm mt-1">High-Resolution Scan • Bachelors of Science
+                        </p>
+                    </div>
+                    <a href="./Assets/Doc/degree.pdf" download
+                        class="w-12 h-12 rounded-full border border-outline-variant flex items-center justify-center hover:bg-primary hover:text-on-primary hover:border-primary transition-all">
+                        <span class="material-symbols-outlined">download</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div id="documentModal"
+            class="fixed inset-0 bg-black/90 backdrop-blur-lg hidden z-[999] flex items-center justify-center">
+
+            <button id="closeModal" class="absolute top-6 right-6 text-white hover:text-primary transition text-3xl">
+                &times;
+            </button>
+
+            <button id="prevPage"
+                class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white hover:text-primary transition text-4xl p-2">
+                &#10094;
+            </button>
+
+            <img id="documentImage"
+                class="max-h-[88vh] max-w-[92vw] object-contain rounded-xl shadow-2xl transition-transform duration-200 select-none"
+                draggable="false" alt="Document page" />
+
+            <button id="nextPage"
+                class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white hover:text-primary transition text-4xl p-2">
+                &#10095;
+            </button>
+
+            <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3">
+                <div id="pageIndicator"
+                    class="text-white text-sm tracking-wider bg-white/10 px-4 py-1 rounded-full backdrop-blur">
+                </div>
+
+                <a id="downloadDocument" href="#" download
+                    class="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary text-white text-sm font-semibold hover:opacity-90 transition">
+                    <span class="material-symbols-outlined text-base">download</span>
+                    Download PDF
+                </a>
+            </div>
+        </div>
+
+    </main>
+    <!-- Footer Execution -->
+    <footer
+        class="static md:fixed md:bottom-0 w-full bg-surface/80 backdrop-blur-md py-6 px-gutter border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 z-30 md:z-50 text-center">
+        <div class="font-label-md text-xs uppercase tracking-widest text-on-surface-variant font-bold">
+            CHAIPOT RUTAMORNCHAI
+        </div>
+        <div class="flex items-center space-x-8">
+            <a class="text-on-surface-variant hover:text-primary transition-colors text-xs font-bold uppercase tracking-tighter"
+                href="https://www.linkedin.com/in/chaipot-rutmornchai-437167367/" rel="noopener noreferrer"
+                target="_blank">LinkedIn</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors text-xs font-bold uppercase tracking-tighter"
+                href="https://github.com/ChaipotRutamornchai" rel="noopener noreferrer" target="_blank">GitHub</a>
+        </div>
+    </footer>
+    <!-- Shared mobile nav toggle -->
+    <script src="css/nav.js"></script>
+    <!-- Page-specific interactions -->
+    <script>
+        // Subtle interaction for document cards
+        document.querySelectorAll('.document-hover').forEach(card => {
+            card.addEventListener('mousemove', (e) => {
+                const rect = card.getBoundingClientRect();
+                const x = e.clientX - rect.left;
+                const y = e.clientY - rect.top;
+
+                const centerX = rect.width / 2;
+                const centerY = rect.height / 2;
+
+                const rotateX = (y - centerY) / 40;
+                const rotateY = (centerX - x) / 40;
+
+                card.style.transform = `perspective(1000px) rotateX(${rotateX}deg) rotateY(${rotateY}deg) scale(1.01)`;
+            });
+
+            card.addEventListener('mouseleave', () => {
+                card.style.transform = `perspective(1000px) rotateX(0deg) rotateY(0deg) scale(1)`;
+            });
+        });
+
+        // Transcript Modal Logic
+        const documents = {
+            transcript: [
+                "Assets/Doc/transcript_p1.jpg",
+                "Assets/Doc/transcript_p2.jpg",
+                "Assets/Doc/transcript_p3.jpg"
+            ],
+
+            certificate: [
+                "Assets/Doc/degree_th.png",
+                "Assets/Doc/degree_en.png"
+            ]
+        };
+
+        const pdfs = {
+            transcript: "Assets/Doc/transcript.pdf",
+            certificate: "Assets/Doc/degree.pdf"
+        };
+
+        let currentDocument = "";
+        let pages = [];
+        let currentPage = 0;
+
+        const modal = document.getElementById("documentModal");
+        const image = document.getElementById("documentImage");
+        const indicator = document.getElementById("pageIndicator");
+
+        function showPage(index) {
+
+            currentPage = index;
+
+            image.src = pages[currentPage];
+
+            indicator.textContent =
+                `${currentPage + 1} / ${pages.length}`;
+
+            document.getElementById("prevPage").style.visibility =
+                currentPage === 0 ? "hidden" : "visible";
+
+            document.getElementById("nextPage").style.visibility =
+                currentPage === pages.length - 1 ? "hidden" : "visible";
+        }
+
+        function openDocument(type) {
+
+            currentDocument = type;
+
+            pages = documents[type];
+
+            showPage(0);
+
+            modal.classList.remove("hidden");
+
+            document.getElementById("downloadDocument").href = pdfs[type];
+
+        }
+
+        document
+            .getElementById("viewTranscript")
+            .addEventListener("click", () => {
+
+                openDocument("transcript");
+
+            });
+
+        document
+            .getElementById("viewCertificate")
+            .addEventListener("click", () => {
+
+                openDocument("certificate");
+
+            });
+
+
+        document
+            .getElementById("nextPage")
+            .onclick = () => {
+
+                if (currentPage < pages.length - 1) {
+
+                    showPage(currentPage + 1);
+
+                }
+
+            }
+
+        document
+            .getElementById("prevPage")
+            .onclick = () => {
+
+                if (currentPage > 0) {
+
+                    showPage(currentPage - 1);
+
+                }
+
+            }
+
+        document
+            .getElementById("closeModal")
+            .onclick = () => {
+
+                modal.classList.add("hidden");
+
+            }
+
+        document.addEventListener("keydown", (e) => {
+
+            if (modal.classList.contains("hidden")) return;
+
+            if (e.key === "ArrowRight")
+                document.getElementById("nextPage").click();
+
+            if (e.key === "ArrowLeft")
+                document.getElementById("prevPage").click();
+
+            if (e.key === "Escape")
+                modal.classList.add("hidden");
+
+        });
+
+        let scale = 1;
+
+        image.addEventListener("wheel", (e) => {
+            e.preventDefault();
+
+            scale += e.deltaY * -0.001;
+            scale = Math.min(Math.max(1, scale), 3);
+
+            image.style.transform = `scale(${scale})`;
+        });
+
+        function resetZoom() {
+            scale = 1;
+            image.style.transform = "scale(1)";
+        }
+
+        modal.addEventListener("click", (e) => {
+            if (e.target === modal) {
+                modal.classList.add("hidden");
+            }
+        });
+    </script>
+</body>
+
+</html>

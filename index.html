@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth" lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+  <title>HOME | CHAIPOT RUTAMORNCHAI</title>
+  <meta content="Portfolio of Chaipot Rutamornchai - Developer &amp; Data Analyst" name="description" />
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect" />
+  <link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect" />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Material Symbols -->
+  <link
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+    rel="stylesheet" />
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+  <script src="css/tailwind-config.js"></script>
+  <!-- Shared site styles -->
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-surface text-on-surface font-body md:overflow-hidden dark">
+  <!-- Shared Component: TopNavBar -->
+  <header
+    class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-sm max-w-container-max mx-auto bg-surface/60 backdrop-blur-xl border-b border-outline-variant/20">
+    <div class="font-headline-sm text-headline-sm font-bold tracking-tighter text-on-surface">
+      Chaipot Rutamornchai
+    </div>
+    <nav class="hidden md:flex items-center gap-8">
+      <a class="text-primary font-bold border-b-2 border-primary pb-1" href="index.html">Home</a>
+      <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+        href="about.html">About</a>
+      <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+        href="dev.html">Dev</a>
+      <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+        href="data.html">Data</a>
+      <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+        href="docs.html">Docs</a>
+    </nav>
+    <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu"
+      class="md:hidden flex items-center justify-center w-10 h-10 rounded-full border border-outline-variant text-on-surface"
+      id="menu-toggle">
+      <span class="material-symbols-outlined" id="menu-icon">menu</span>
+    </button>
+  </header>
+  <!-- Mobile Nav Panel -->
+  <div
+    class="mobile-menu-panel fixed top-[64px] sm:top-[76px] left-0 w-full z-40 bg-surface/95 backdrop-blur-xl border-b border-outline-variant/20 px-6 py-6 gap-1"
+    id="mobile-menu">
+    <a class="text-primary font-bold py-3 text-base border-b border-outline-variant/20" href="index.html">Home</a>
+    <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300 border-b border-outline-variant/20"
+      href="about.html">About</a>
+    <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300 border-b border-outline-variant/20"
+      href="dev.html">Dev</a>
+    <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300 border-b border-outline-variant/20"
+      href="data.html">Data</a>
+    <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300"
+      href="docs.html">Docs</a>
+  </div>
+  <!-- Main Content: HOME (One Desktop Viewport) -->
+  <main
+    class="relative min-h-screen md:h-screen w-full flex flex-col items-center justify-center px-gutter pt-28 pb-40 md:pt-0 md:pb-0 md:overflow-hidden">
+    <!-- Background Decoration (Subtle) -->
+    <div class="absolute inset-0 z-0 pointer-events-none opacity-40">
+      <div class="absolute top-1/4 left-1/4 w-96 h-96 bg-primary/10 rounded-full blur-[120px]"></div>
+      <div class="absolute bottom-1/4 right-1/4 w-96 h-96 bg-primary/5 rounded-full blur-[100px]"></div>
+    </div>
+    <div class="relative z-10 text-center space-y-8 md:space-y-12 max-w-5xl">
+      <!-- Headline Section -->
+      <div class="space-y-4">
+        <h1
+          class="text-[64px] sm:text-[90px] md:text-[150px] lg:text-[200px] font-bold leading-none tracking-tight flex items-center justify-center text-on-surface">
+          <span class="font-headline">PORTFOLIO</span>
+        </h1>
+        <h2
+          class="text-lg sm:text-xl md:text-3xl font-semibold text-on-surface-variant tracking-[0.2em] md:tracking-[0.3em] font-headline uppercase px-2">
+          CHAIPOT RUTAMORNCHAI
+        </h2>
+      </div>
+      <!-- Navigation Buttons -->
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-4 w-full px-2 sm:px-4">
+        <a class="nav-btn-hover group flex items-center justify-center py-5 px-8 border border-outline-variant rounded-full text-on-surface font-medium tracking-wide bg-white/5"
+          href="about.html">
+          About Me
+        </a>
+        <a class="nav-btn-hover group flex items-center justify-center py-5 px-8 border border-outline-variant rounded-full text-on-surface font-medium tracking-wide bg-white/5"
+          href="dev.html">
+          Developer Portfolio
+        </a>
+        <a class="nav-btn-hover group flex items-center justify-center py-5 px-8 border border-outline-variant rounded-full text-on-surface font-medium tracking-wide bg-white/5"
+          href="data.html">
+          Data Analyst Portfolio
+        </a>
+        <a class="nav-btn-hover group flex items-center justify-center py-5 px-8 border border-outline-variant rounded-full text-on-surface font-medium tracking-wide bg-white/5"
+          href="docs.html">
+          Academic Documents
+        </a>
+      </div>
+    </div>
+  </main>
+  <!-- Shared Component: Footer -->
+  <footer
+    class="static md:fixed md:bottom-0 w-full bg-surface/80 backdrop-blur-md py-6 px-gutter border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 z-30 md:z-50 text-center">
+    <div class="font-label-md text-xs uppercase tracking-widest text-on-surface-variant font-bold">
+      CHAIPOT RUTAMORNCHAI
+    </div>
+    <div class="flex items-center space-x-8">
+      <a class="text-on-surface-variant hover:text-primary transition-colors text-xs font-bold uppercase tracking-tighter"
+        href="https://www.linkedin.com/in/chaipot-rutmornchai-437167367/" rel="noopener noreferrer"
+        target="_blank">LinkedIn</a>
+      <a class="text-on-surface-variant hover:text-primary transition-colors text-xs font-bold uppercase tracking-tighter"
+        href="https://github.com/ChaipotRutamornchai" rel="noopener noreferrer" target="_blank">GitHub</a>
+    </div>
+  </footer>
+  <!-- Shared mobile nav toggle -->
+  <script src="css/nav.js"></script>
+  <!-- Page-specific micro-interactions -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      // Subtle mouse parallax effect for background glow
+      const glows = document.querySelectorAll('.rounded-full.blur-\\[120px\\], .rounded-full.blur-\\[100px\\]');
+
+      window.addEventListener('mousemove', (e) => {
+        const { clientX, clientY } = e;
+        const moveX = (clientX - window.innerWidth / 2) / 60;
+        const moveY = (clientY - window.innerHeight / 2) / 60;
+
+        glows.forEach((glow, index) => {
+          const speed = (index + 1) * 0.4;
+          glow.style.transform = `translate(${moveX * speed}px, ${moveY * speed}px)`;
+        });
+      });
+
+      // Entry animation for headline components
+      const h1 = document.querySelector('h1');
+      const h2 = document.querySelector('h2');
+      const buttons = document.querySelectorAll('.nav-btn-hover');
+
+      h1.style.opacity = '0';
+      h1.style.transform = 'translateY(30px)';
+      h2.style.opacity = '0';
+      h2.style.transform = 'translateY(20px)';
+
+      setTimeout(() => {
+        h1.style.transition = 'all 1.2s cubic-bezier(0.16, 1, 0.3, 1)';
+        h1.style.opacity = '1';
+        h1.style.transform = 'translateY(0)';
+      }, 300);
+
+      setTimeout(() => {
+        h2.style.transition = 'all 1.2s cubic-bezier(0.16, 1, 0.3, 1)';
+        h2.style.opacity = '1';
+        h2.style.transform = 'translateY(0)';
+      }, 600);
+
+      buttons.forEach((btn, i) => {
+        btn.style.opacity = '0';
+        btn.style.transform = 'translateY(15px)';
+        setTimeout(() => {
+          btn.style.transition = 'all 0.8s cubic-bezier(0.16, 1, 0.3, 1)';
+          btn.style.opacity = '1';
+          btn.style.transform = 'translateY(0)';
+        }, 1000 + (i * 120));
+      });
+    });
+  </script>
+</body>
+
+</html>

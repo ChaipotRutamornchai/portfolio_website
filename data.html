@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>DATA ANALYST PORTFOLIO | CHAIPOT RUTAMORNCHAI</title>
+    <meta content="Data analytics projects by Chaipot Rutamornchai" name="description" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="css/tailwind-config.js"></script>
+    <!-- Shared site styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="overflow-x-hidden">
+    <!-- TopNavBar -->
+    <header
+        class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-sm max-w-container-max mx-auto bg-surface/60 backdrop-blur-xl border-b border-outline-variant/20">
+        <div class="font-headline-sm text-headline-sm font-bold tracking-tighter text-on-surface">Chaipot Rutamornchai
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+                href="index.html">Home</a>
+            <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+                href="about.html">About</a>
+            <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+                href="dev.html">Dev</a>
+            <a class="text-primary font-bold border-b-2 border-primary pb-1" href="data.html">Data</a>
+            <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+                href="docs.html">Docs</a>
+        </nav>
+        <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu"
+            class="md:hidden flex items-center justify-center w-10 h-10 rounded-full border border-outline-variant text-on-surface"
+            id="menu-toggle">
+            <span class="material-symbols-outlined" id="menu-icon">menu</span>
+        </button>
+    </header>
+    <div class="mobile-menu-panel fixed top-[64px] sm:top-[76px] left-0 w-full z-40 bg-surface/95 backdrop-blur-xl border-b border-outline-variant/20 px-6 py-6 gap-1"
+        id="mobile-menu">
+        <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300 border-b border-outline-variant/20"
+            href="index.html">Home</a>
+        <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300 border-b border-outline-variant/20"
+            href="about.html">About</a>
+        <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300 border-b border-outline-variant/20"
+            href="dev.html">Dev</a>
+        <a class="text-primary font-bold py-3 text-base border-b border-outline-variant/20" href="data.html">Data</a>
+        <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300"
+            href="docs.html">Docs</a>
+    </div>
+    <main class="pt-32 pb-20 px-gutter max-w-7xl mx-auto">
+        <!-- Hero Section -->
+        <header class="mb-20 text-center md:text-left relative">
+            <div class="absolute -top-20 -left-20 w-64 h-64 bg-primary/10 rounded-full blur-[120px]"></div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tighter mb-6 text-gradient">
+                Data Analyst Portfolio
+            </h1>
+            <p class="text-on-surface-variant text-lg md:text-xl max-w-2xl leading-relaxed">
+                Strategic analytics projects focused on operational efficiency, revenue growth, and customer lifecycle
+                management using advanced business intelligence frameworks.
+            </p>
+        </header>
+
+        <!-- Featured Project Grid (Detailed View) -->
+        <section class="flex flex-col gap-12">
+            <!-- Project Card 1: Large Featured -->
+            <article class="glass-card rounded-[2.5rem] overflow-hidden group grid grid-cols-1 lg:grid-cols-2">
+                <div class="h-80 lg:h-full overflow-hidden relative">
+                    <div class="w-full h-full bg-cover bg-center transition-transform duration-700 group-hover:scale-110"
+                        data-alt="Global Supply Chain Dashboard"
+                        style="background-image: url(./Assets/Images/nlp_analysis.png)">
+                    </div>
+                    <div
+                        class="absolute inset-0 bg-gradient-to-t from-surface lg:bg-gradient-to-r lg:from-transparent lg:to-surface/20 opacity-60">
+                    </div>
+                </div>
+                <div class="p-8 md:p-12 flex flex-col justify-center">
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span
+                            class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">Python</span>
+                        <span
+                            class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">HTML</span>
+                        <span
+                            class="bg-primary/10 text-primary px-3 py-1 rounded-full text-xs font-semibold">Tableau</span>
+                    </div>
+                    <h3 class="text-3xl md:text-4xl font-bold mb-6 text-on-surface tracking-tight">GameFAQs scraping
+                        analysis project</h3>
+                    <div class="space-y-6 mb-8">
+                        <div>
+                            <h4 class="text-primary text-xs font-bold uppercase tracking-widest mb-2">Analytical Goal
+                            </h4>
+                            <p class="text-on-surface-variant text-base leading-relaxed">Scrapping and analyzing user dissusstions from GameFAQs to extract insights on game performance, user sentiment, and trends in the gaming community.
+                            </p>
+                        </div>
+                        <div>
+                            <h4 class="text-primary text-xs font-bold uppercase tracking-widest mb-2">Business Impact
+                            </h4>
+                            <p class="text-on-surface-variant text-base leading-relaxed">The analysis provides actionable insights for game developers and marketers, enabling them to understand player feedback, improve game features, and enhance user engagement.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="static md:fixed md:bottom-0 w-full bg-surface/80 backdrop-blur-md py-6 px-gutter border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 z-30 md:z-50 text-center">
+        <div class="font-label-md text-xs uppercase tracking-widest text-on-surface-variant font-bold">
+            CHAIPOT RUTAMORNCHAI
+        </div>
+        <div class="flex items-center space-x-8">
+            <a class="text-on-surface-variant hover:text-primary transition-colors text-xs font-bold uppercase tracking-tighter"
+                href="https://www.linkedin.com/in/chaipot-rutmornchai-437167367/" rel="noopener noreferrer"
+                target="_blank">LinkedIn</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors text-xs font-bold uppercase tracking-tighter"
+                href="https://github.com/ChaipotRutamornchai" rel="noopener noreferrer" target="_blank">GitHub</a>
+        </div>
+    </footer>
+    <!-- Shared mobile nav toggle -->
+    <script src="css/nav.js"></script>
+    <!-- Page-specific entrance animation for cards -->
+    <script>
+        // Simple entrance animation for cards
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('article');
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry, index) => {
+                    if (entry.isIntersecting) {
+                        setTimeout(() => {
+                            entry.target.classList.add('opacity-100', 'translate-y-0');
+                            entry.target.classList.remove('opacity-0', 'translate-y-8');
+                        }, index * 100);
+                    }
+                });
+            }, { threshold: 0.1 });
+
+            cards.forEach(card => {
+                card.classList.add('opacity-0', 'translate-y-8', 'transition-all', 'duration-700');
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+
+</html>

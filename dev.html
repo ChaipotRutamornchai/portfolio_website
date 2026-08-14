@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+
+<html class="scroll-smooth dark" lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <meta content="width=device-width, initial-scale=1.0" name="viewport" />
+    <title>DEVELOPER PORTFOLIO | CHAIPOT RUTAMORNCHAI</title>
+    <meta content="Full-stack development projects by Chaipot Rutamornchai" name="description" />
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400;500;600;700;800&amp;display=swap"
+        rel="stylesheet" />
+    <link
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap"
+        rel="stylesheet" />
+    <script src="css/tailwind-config.js"></script>
+    <!-- Shared site styles -->
+    <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body class="bg-surface text-on-surface antialiased">
+    <!-- TopNavBar -->
+    <header
+        class="fixed top-0 w-full z-50 flex justify-between items-center px-gutter py-sm max-w-container-max mx-auto bg-surface/60 backdrop-blur-xl border-b border-outline-variant/20">
+        <div class="font-headline-sm text-headline-sm font-bold tracking-tighter text-on-surface">
+            Chaipot Rutamornchai
+        </div>
+        <nav class="hidden md:flex items-center gap-8">
+            <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+                href="index.html">Home</a>
+            <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+                href="about.html">About</a>
+            <a class="text-primary font-bold border-b-2 border-primary pb-1 transition-colors duration-300"
+                href="dev.html">Dev</a>
+            <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+                href="data.html">Data</a>
+            <a class="text-on-surface-variant font-body-md text-body-md hover:text-primary transition-colors duration-300"
+                href="docs.html">Docs</a>
+        </nav>
+        <button aria-controls="mobile-menu" aria-expanded="false" aria-label="Toggle navigation menu"
+            class="md:hidden flex items-center justify-center w-10 h-10 rounded-full border border-outline-variant text-on-surface"
+            id="menu-toggle">
+            <span class="material-symbols-outlined" id="menu-icon">menu</span>
+        </button>
+    </header>
+    <div class="mobile-menu-panel fixed top-[64px] sm:top-[76px] left-0 w-full z-40 bg-surface/95 backdrop-blur-xl border-b border-outline-variant/20 px-6 py-6 gap-1"
+        id="mobile-menu">
+        <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300 border-b border-outline-variant/20"
+            href="index.html">Home</a>
+        <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300 border-b border-outline-variant/20"
+            href="about.html">About</a>
+        <a class="text-primary font-bold py-3 text-base border-b border-outline-variant/20" href="dev.html">Dev</a>
+        <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300 border-b border-outline-variant/20"
+            href="data.html">Data</a>
+        <a class="text-on-surface-variant font-body-md text-base py-3 hover:text-primary transition-colors duration-300"
+            href="docs.html">Docs</a>
+    </div>
+    <main class="pt-32 pb-20">
+        <!-- Hero Section -->
+        <section class="px-gutter mb-24 text-center max-w-4xl mx-auto relative">
+            <div class="absolute -top-20 left-1/2 -translate-x-1/2 w-64 h-64 bg-primary/10 rounded-full blur-[120px]">
+            </div>
+            <h1 class="text-5xl md:text-7xl font-extrabold tracking-tight mb-6 text-gradient">
+                Developer Portfolio
+            </h1>
+            <p class="text-xl md:text-2xl text-on-surface-variant font-light leading-relaxed">
+                Web Applications, and Software Engineering Projects.
+            </p>
+
+        </section>
+        <!-- Detailed Project List -->
+        <section class="px-gutter max-w-6xl mx-auto space-y-16">
+            <!-- Project Card 1: Nexus Analytics Engine -->
+            <div class="glass-card rounded-3xl overflow-hidden flex flex-col lg:flex-row items-stretch">
+                <div class="lg:w-1/2 h-80 lg:h-auto relative overflow-hidden group">
+                    <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+                        src="./Assets/Images/DashboardPage.png">
+                    <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                    </div>
+                </div>
+                <div class="lg:w-1/2 p-8 md:p-12 flex flex-col">
+                    <div class="flex flex-wrap gap-2 mb-6">
+                        <span
+                            class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider border border-primary/20">C#</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider border border-primary/20">ASP.NET</span>
+                        <span
+                            class="px-3 py-1 rounded-full bg-primary/10 text-primary text-xs font-bold uppercase tracking-wider border border-primary/20">SQL
+                            Server</span>
+                    </div>
+                    <h3 class="text-3xl font-bold mb-4 text-on-surface">IT Equipment Management</h3>
+                    <p class="text-on-surface-variant text-lg leading-relaxed mb-8">
+                        A web application designed to streamline the management of IT equipment within an organization.
+                        It features a user-friendly interface for tracking inventory, managing equipment lifecycle, and
+                        generating insightful reports. The application is built with .NET and C#, following a clean
+                        architecture approach. SQL Server serves as the backend database, providing reliable data
+                        storage and retrieval capabilities.
+                    </p>
+                    <div class="mb-10">
+                        <h4 class="text-sm font-bold uppercase tracking-widest text-primary mb-4">Key Outcomes</h4>
+                        <ul class="space-y-3">
+                            <li class="flex items-start gap-3 text-on-surface-variant">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                <span>Fast and easy to understand the status of IT equipment.</span>
+                            </li>
+                            <li class="flex items-start gap-3 text-on-surface-variant">
+                                <span class="material-symbols-outlined text-primary text-lg">check_circle</span>
+                                <span>Simple to use and maintain.</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Footer -->
+    <footer
+        class="static md:fixed md:bottom-0 w-full bg-surface/80 backdrop-blur-md py-6 px-gutter border-t border-outline-variant/10 flex flex-col md:flex-row justify-between items-center gap-3 md:gap-4 z-30 md:z-50 text-center">
+        <div class="font-label-md text-xs uppercase tracking-widest text-on-surface-variant font-bold">
+            CHAIPOT RUTAMORNCHAI
+        </div>
+        <div class="flex items-center space-x-8">
+            <a class="text-on-surface-variant hover:text-primary transition-colors text-xs font-bold uppercase tracking-tighter"
+                href="https://www.linkedin.com/in/chaipot-rutmornchai-437167367/" rel="noopener noreferrer"
+                target="_blank">LinkedIn</a>
+            <a class="text-on-surface-variant hover:text-primary transition-colors text-xs font-bold uppercase tracking-tighter"
+                href="https://github.com/ChaipotRutamornchai" rel="noopener noreferrer" target="_blank">GitHub</a>
+        </div>
+    </footer>
+    <!-- Shared mobile nav toggle -->
+    <script src="css/nav.js"></script>
+    <!-- Page-specific card reveal animation -->
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            const cards = document.querySelectorAll('.glass-card');
+
+            const observerOptions = {
+                threshold: 0.1,
+                rootMargin: '0px 0px -50px 0px'
+            };
+
+            const observer = new IntersectionObserver((entries) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.style.opacity = '1';
+                        entry.target.style.transform = 'translateY(0)';
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            cards.forEach((card, i) => {
+                card.style.opacity = '0';
+                card.style.transform = 'translateY(30px)';
+                card.style.transition = `all 0.8s cubic-bezier(0.22, 1, 0.36, 1) ${i * 0.15}s`;
+                observer.observe(card);
+            });
+        });
+    </script>
+</body>
+
+</html>
