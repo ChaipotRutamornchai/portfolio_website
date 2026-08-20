@@ -72,10 +72,12 @@
         <section class="px-gutter max-w-6xl mx-auto space-y-16">
             <!-- Project Card 1: Nexus Analytics Engine -->
             <div class="glass-card rounded-3xl overflow-hidden flex flex-col lg:flex-row items-stretch">
-                <div class="lg:w-1/2 h-80 lg:h-auto relative overflow-hidden group">
+                <div class="lg:w-1/2 h-80 lg:h-auto relative overflow-hidden group cursor-pointer"
+                    onclick="openImageModal('proj1')">
                     <img class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
-                        src="./Assets/Images/DashboardPage.png">
-                    <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity">
+                        src="./Assets/Images/Dev_proj_1/DashboardPage.png">
+                    <div class="absolute inset-0 bg-primary/10 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center pointer-events-none">
+                        <span class="material-symbols-outlined text-white text-4xl drop-shadow-lg">zoom_in</span>
                     </div>
                 </div>
                 <div class="lg:w-1/2 p-8 md:p-12 flex flex-col">
@@ -127,8 +129,115 @@
                 href="https://github.com/ChaipotRutamornchai" rel="noopener noreferrer" target="_blank">GitHub</a>
         </div>
     </footer>
+    <!-- Image Preview Modal -->
+    <div id="imageModal"
+        class="fixed inset-0 bg-black/90 backdrop-blur-lg hidden z-[999] flex items-center justify-center">
+        <button id="closeImageModal" class="absolute top-6 right-6 text-white hover:text-primary transition text-3xl">
+            &times;
+        </button>
+        <button id="prevImage"
+            class="absolute left-4 md:left-8 top-1/2 -translate-y-1/2 text-white hover:text-primary transition text-4xl p-2">
+            &#10094;
+        </button>
+        <img id="modalProjectImage"
+            class="max-h-[88vh] max-w-[92vw] object-contain rounded-xl shadow-2xl transition-transform duration-200 select-none"
+            draggable="false" alt="Project screenshot" />
+        <button id="nextImage"
+            class="absolute right-4 md:right-8 top-1/2 -translate-y-1/2 text-white hover:text-primary transition text-4xl p-2">
+            &#10095;
+        </button>
+        <div class="absolute bottom-6 left-1/2 -translate-x-1/2 flex flex-col items-center gap-3">
+            <div id="modalProjectCaption"
+                class="text-white text-sm tracking-wider bg-white/10 px-4 py-1 rounded-full backdrop-blur"></div>
+            <div id="modalImageIndicator"
+                class="text-white text-xs tracking-wider bg-white/10 px-3 py-1 rounded-full backdrop-blur"></div>
+        </div>
+    </div>
     <!-- Shared mobile nav toggle -->
     <script src="css/nav.js"></script>
+    <!-- Image modal logic -->
+    <script>
+        // Each project can list one or more screenshots to cycle through
+        const galleries = {
+            proj1: {
+                caption: 'IT Equipment Management',
+                images: [
+                    './Assets/Images/Dev_proj_1/DashboardPage.png',
+                    './Assets/Images/Dev_proj_1/DetailPage.png',
+                    './Assets/Images/Dev_proj_1/InventoryPage.png',
+                    './Assets/Images/Dev_proj_1/UserInfoPage.png'
+                ]
+            }
+        };
+
+        const imageModal = document.getElementById('imageModal');
+        const modalProjectImage = document.getElementById('modalProjectImage');
+        const modalProjectCaption = document.getElementById('modalProjectCaption');
+        const modalImageIndicator = document.getElementById('modalImageIndicator');
+        const prevImageBtn = document.getElementById('prevImage');
+        const nextImageBtn = document.getElementById('nextImage');
+
+        let currentGallery = [];
+        let currentCaption = '';
+        let currentIndex = 0;
+        let imgScale = 1;
+
+        function showImage(index) {
+            currentIndex = index;
+            modalProjectImage.src = currentGallery[currentIndex];
+            modalProjectCaption.textContent = currentCaption;
+            modalImageIndicator.textContent = currentGallery.length > 1
+                ? `${currentIndex + 1} / ${currentGallery.length}`
+                : '';
+            imgScale = 1;
+            modalProjectImage.style.transform = 'scale(1)';
+
+            const multi = currentGallery.length > 1;
+            prevImageBtn.style.visibility = multi && currentIndex > 0 ? 'visible' : 'hidden';
+            nextImageBtn.style.visibility = multi && currentIndex < currentGallery.length - 1 ? 'visible' : 'hidden';
+        }
+
+        function openImageModal(key) {
+            const gallery = galleries[key];
+            if (!gallery) return;
+            currentGallery = gallery.images;
+            currentCaption = gallery.caption || '';
+            showImage(0);
+            imageModal.classList.remove('hidden');
+        }
+
+        function closeImageModal() {
+            imageModal.classList.add('hidden');
+        }
+
+        document.getElementById('closeImageModal').addEventListener('click', closeImageModal);
+
+        prevImageBtn.addEventListener('click', () => {
+            if (currentIndex > 0) showImage(currentIndex - 1);
+        });
+
+        nextImageBtn.addEventListener('click', () => {
+            if (currentIndex < currentGallery.length - 1) showImage(currentIndex + 1);
+        });
+
+        imageModal.addEventListener('click', (e) => {
+            if (e.target === imageModal) closeImageModal();
+        });
+
+        document.addEventListener('keydown', (e) => {
+            if (imageModal.classList.contains('hidden')) return;
+            if (e.key === 'Escape') closeImageModal();
+            if (e.key === 'ArrowRight') nextImageBtn.click();
+            if (e.key === 'ArrowLeft') prevImageBtn.click();
+        });
+
+        modalProjectImage.addEventListener('wheel', (e) => {
+            e.preventDefault();
+            imgScale += e.deltaY * -0.001;
+            imgScale = Math.min(Math.max(1, imgScale), 3);
+            modalProjectImage.style.transform = `scale(${imgScale})`;
+        });
+    </script>
     <!-- Page-specific card reveal animation -->
     <script>
         document.addEventListener('DOMContentLoaded', () => {
